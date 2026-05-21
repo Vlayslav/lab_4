@@ -1,0 +1,28 @@
+public class Client {
+
+    private String name;
+    private String phone;
+    private String email;
+
+    public Client(String name, String phone, String email) {
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    static class Passport {
+        private String passportNumber;
+
+        public Passport(String passportNumber) {
+            this.passportNumber = passportNumber;
+        }
+
+        public void showPassport() {
+            System.out.println("Passport: " + passportNumber);
+        }
+    }
+}
